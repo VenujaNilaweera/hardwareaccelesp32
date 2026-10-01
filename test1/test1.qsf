@@ -39,7 +39,7 @@
 
 set_global_assignment -name FAMILY "MAX II"
 set_global_assignment -name DEVICE EPM240T100C5
-set_global_assignment -name TOP_LEVEL_ENTITY ledblibk
+set_global_assignment -name TOP_LEVEL_ENTITY spi_led_control
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 25.1STD.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "11:36:55  SEPTEMBER 27, 2026"
 set_global_assignment -name LAST_QUARTUS_VERSION "25.1std.0 Lite Edition"
@@ -60,7 +60,7 @@ set_location_assignment PIN_77 -to led
 set_location_assignment PIN_64 -to clk
 set_location_assignment PIN_76 -to led2
 set_global_assignment -name BDF_FILE ledblibk.bdf
-set_global_assignment -name VERILOG_FILE delay500ms.v
-set_location_assignment PIN_75 -to sclk
-set_location_assignment PIN_74 -to mosi
-set_location_assignment PIN_72 -to cs
+set_global_assignment -name VERILOG_FILE spi_led_control.v
+set_location_assignment PIN_75 -to spi_sclk
+set_location_assignment PIN_74 -to spi_mosi
+set_location_assignment PIN_72 -to spi_cs
