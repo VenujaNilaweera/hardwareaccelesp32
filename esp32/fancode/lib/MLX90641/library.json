@@ -1,0 +1,7 @@
+{
+  "name": "MLX90641",
+  "version": "1.0.0",
+  "description": "Melexis MLX90641 16x12 thermal sensor API (github.com/melexis/mlx90641-library) with an Arduino Wire I2C driver",
+  "frameworks": "arduino",
+  "platforms": "espressif32"
+}
